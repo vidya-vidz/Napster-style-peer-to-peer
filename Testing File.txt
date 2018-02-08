@@ -1,0 +1,11 @@
+ABSTRACT
+Java Remote Method Invocation (RMI) is a built-in and easy-to-use framework for the distribution of
+remote Java objects. Its simplicity and seamless inter-virtual machine communication has made it a
+valuable tool for distributed services. It nevertheless exhibits certain constraints that practically limit
+RMI applications to the classical client/server distribution model, and make highly distributed and highly
+dynamic systems very difficult to build atop RMI.
+We present an approach that makes Java RMI usable for P2P and similar distribution models. The
+solution basically consists of three ideas: (1) separate the location of the registry from the remote service
+object, (2) distribute the registry across a DHT infrastructure, and (3) transparently enhance the built-in
+communication between RMI servers and clients to allow traversal of NAT and firewall boundaries. Our
+approach is extremely lightweight, transparent, and requires practically zero configuration. 
